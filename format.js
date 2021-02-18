@@ -1,6 +1,6 @@
 function tostring(arg) {
   if (!arg || typeof arg != 'object') return arg;
-  if (typeof arg.toString == 'function') return arg.toString();
+  if (typeof arg.toString == 'function' && !Array.isArray(arg)) return arg.toString();
   return JSON.stringify(arg);
 }
 
