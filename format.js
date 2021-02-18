@@ -1,6 +1,3 @@
-function tojson(arg) {
-  return typeof arg == 'object' ? JSON.stringify(arg) : arg;
-}
 function tostring(arg) {
   if (!arg || typeof arg != 'object') return arg;
   if (typeof arg.toString == 'function') return arg.toString();
@@ -21,8 +18,10 @@ function format(fmt) {
           arg = Number(arg);
           break;
         case 'o':
+          arg = tostring(arg);
+          break;
         case 'j':
-          arg = tojson(arg);
+          arg = JSON.stringify(arg);
           break;
       }
       if (!escaped) {
