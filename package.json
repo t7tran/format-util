@@ -1,7 +1,7 @@
 {
   "name": "format-util",
   "description": "Lightweight format utility for the browser, based on util.format().",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "muji <noop@xpm.io>",
   "browser": "./format.js",
   "devDependencies": {
@@ -28,7 +28,7 @@
     "require": "lib",
     "links": "links.md",
     "toc": "Table of Contents",
-    "base": "https://github.com/tmpfs/format-util",
+    "base": "https://github.com/t7tran/format-util",
     "partial": [
       {
         "inc": [
@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tmpfs/format-util.git"
+    "url": "https://github.com/t7tran/format-util.git"
   },
   "scripts": {
     "browserify": "browserify -o format-util.js -e ./format.js && du -bh format-util.js",
